@@ -1,0 +1,26 @@
+*{
+    overflow-x: hidden;
+    background-color: black;
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.img-work{
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 3px solid rgb(25, 7, 42);
+    
+    display: flex;
+    justify-content: center;
+    height: 15em;
+
+    padding: 0.5em;
+    margin-top: 10rem;
+}
+.writing{
+    text-align: center;
+}
+.writing h1 i{
+    color: blueviolet;
+   
+}
