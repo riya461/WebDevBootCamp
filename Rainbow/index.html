@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indigo</title>
     <style>
-        div{
-            height: 50px;
+       
+        .container{
             text-align: center;
-            padding: 5%;
+            flex-basis: 100px;
             font-weight: bold;
             color: white;
 
-            display: flex;
+            /* display: flex; */
+            display: inline-flex;
 
             flex-direction: column;
             /* flex-direction: row; */
 
+        }
+        
+        .container > *{
+            flex-basis: 200px;
         }
         .violet{
             background-color: violet;
