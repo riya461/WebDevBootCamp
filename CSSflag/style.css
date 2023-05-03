@@ -1,0 +1,49 @@
+body{
+
+    background-color: black;
+}
+.flag{
+    width: 24rem;
+    margin-top: 20%;
+    margin-left: 18%;
+    margin-right: 18%;
+    
+
+
+
+}
+h1{
+    font-family:monospace;
+    margin-top: 5rem;
+    color: aliceblue;
+    text-align: center;
+}
+h1 i{
+    font-weight: lighter;
+}
+.white,.green,.saffron{
+    
+    height: 6.5rem;
+}
+
+.flag .white{
+    background: white;
+
+}
+.flag .white img{
+    display: flex;
+    justify-items: center;
+   margin: auto;
+    height: 6.5rem;
+
+}
+.flag .saffron{
+    background: orange;
+}
+
+.flag .green{
+    background: green;
+
+}
+
+
