@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid placement</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        
+        .cowboy{
+            grid-column: span 2;
+
+        }
+        .book{
+            grid-column: span 3;
+        }
+        .item{
+            background-color: blueviolet;
+            text-align: center;
+            /* padding: 30px; */
+            
+        }
+        .none{
+            grid-column: span 1;
+        }
+        .work{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item cowboy">
+            cowboy
+        </div>
+        <div class="item astronaut">
+            astronaut
+        </div>
+        <div class="item none"></div>
+        <div class="work item">
+            work
+        </div>
+        <div class="item book">
+            book
+        </div>
+    </div>
+</body>
+</html>
