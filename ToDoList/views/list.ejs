@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>To do List</title>
+</head>
+
+<body>
+<div class="overflow">
+<h1>
+   <%= kindOfDay %>
+
+</h1>   
+<ul>
+    <% for(var i=0; i<newListItem.length; i++) { %>
+        <li>
+        <input type="checkbox" name="packersOff" id="packers" value="1"/>
+        <label for="packers" class="strikethrough"><%= newListItem[i] %></label>
+    </li>
+        <% } %>
+</ul> 
+<form class="val" action="/" method="post">
+    <input type="text" name="newitem" id="" placeholder="Enter the new item" autocomplete="off">
+    <button type="submit">+</button>
+</form>
+</div>
+<style>
+    button{
+        min-height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: #A683E3;
+        color: white;
+        font-size: 30px;
+        padding-bottom: 6px;
+        border-width: 0;
+        
+        
+    }
+    input[type="text"]{
+       
+        margin: 20px;background-color: white;
+        margin-right: 50px;
+        border-radius: 5px;
+        color: black;
+        padding: 10px;
+        list-style: none;
+        font-size: larger;
+        border-color: grey;
+       
+    }
+    input[type="checkbox"]{
+        margin: 20px;
+
+    }
+    body{
+        background-color: lavender;
+        
+    }
+    .overflow{
+        
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    }
+    input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+    h1{
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 50px;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        list-style: none;
+        font-size: x-large;
+        border-color: grey;
+        border-top: 20px;
+        background-color: rgb(165, 56, 212);
+        
+    }
+    li{
+        width: 100%;
+
+        background-color: white;
+        margin-right: 50px;
+        border-radius: 5px;
+        color: black;
+        padding: 10px;
+        list-style: none;
+        font-size: larger;
+        border-color: grey;
+        border-top: 20px;
+    }
+    .val{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+</style>
+</body>
+</html>
